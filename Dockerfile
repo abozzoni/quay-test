@@ -1,6 +1,6 @@
-FROM alpine:3.20.2
-RUN apk add curl ca-certificates
+FROM alpine:3.18
+#RUN apk add curl ca-certificates
 
 #RUN apk upgrade &&
-RUN rm -rf /var/cache/apk/*
+#RUN rm -rf /var/cache/apk/*
 COPY ./app /app
